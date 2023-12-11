@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CajeroATM</title>
+</head>
+<body>
+    <section id="login">
+        <form action="Login">
+            <div class="username">
+                <div id="usernameMessage">
+                <!-- espacio para generar alerta si no se ha seleccionado algun usuario -->
+                </div>
+                <label for="Usuario">Usuario</label>
+                <select name="users" id="Usuario">
+                    <option value="Ninguno"></option>
+                    <option value="Mali">Mali</option>
+                    <option value="Gera">Gera</option>
+                    <option value="Maui">Maui</option>
+                </select>
+            </div>
+            <div class="password">
+                <div id="passwordMessage">
+                <!-- espacio para generar alerta si la contrasena es incorrecta -->
+                </div>
+                <label for="Clave">Contraseña</label>
+                <input type="password" placeholder="password" id="Clave">
+            </div>
+            <input type="submit" value="Ingresar">
+
+        </form>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>
